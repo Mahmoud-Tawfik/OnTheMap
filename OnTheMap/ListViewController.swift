@@ -24,13 +24,13 @@ class ListViewController: MapTypeViewController, UITableViewDataSource, UITableV
     // MARK: - UITableViewDataSource methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Parse.students.count
+        return ParseStudents.students.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "List Cell")!
         cell.imageView?.image = UIImage(named: "pin")
-        let  student = Parse.students[indexPath.row]
+        let  student = ParseStudents.students[indexPath.row]
         cell.textLabel?.text = student.fullName
         cell.detailTextLabel?.text = student.mediaURL
 
@@ -41,7 +41,7 @@ class ListViewController: MapTypeViewController, UITableViewDataSource, UITableV
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let  student = Parse.students[indexPath.row]
+        let  student = ParseStudents.students[indexPath.row]
         if let url = URL(string: student.mediaURL) {
             UIApplication.shared.openURL(url)
         }

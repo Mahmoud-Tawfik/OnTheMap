@@ -26,7 +26,7 @@ class MapViewController: MapTypeViewController, MKMapViewDelegate {
     func updateMapAnnotations() {
         mapView.removeAnnotations(mapView.annotations)
         
-        for student in Parse.students {
+        for student in ParseStudents.students {
             let location = CLLocationCoordinate2DMake(student.latitude, student.longitude)
             let pin = MKPointAnnotation()
             pin.coordinate = location

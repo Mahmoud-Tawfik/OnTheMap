@@ -25,6 +25,7 @@
 		1EF740621DAEE505004359DD /* UdacityUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF740611DAEE505004359DD /* UdacityUser.swift */; };
 		1EF740641DAF0EBD004359DD /* ParseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF740631DAF0EBD004359DD /* ParseConstants.swift */; };
 		1EF740661DB057E7004359DD /* MapTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF740651DB057E7004359DD /* MapTypeViewController.swift */; };
+		1EF740681DB15F84004359DD /* ParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF740671DB15F84004359DD /* ParseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		1EF740611DAEE505004359DD /* UdacityUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityUser.swift; sourceTree = "<group>"; };
 		1EF740631DAF0EBD004359DD /* ParseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConstants.swift; sourceTree = "<group>"; };
 		1EF740651DB057E7004359DD /* MapTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTypeViewController.swift; sourceTree = "<group>"; };
+		1EF740671DB15F84004359DD /* ParseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				1EE7545C1DACA3E5001100F9 /* ParseClient.swift */,
 				1EF740631DAF0EBD004359DD /* ParseConstants.swift */,
 				1EE7545E1DACA998001100F9 /* Student.swift */,
+				1EF740671DB15F84004359DD /* ParseData.swift */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				1EE7546E1DAD55F8001100F9 /* PinViewController.swift in Sources */,
 				1EE754721DADB878001100F9 /* UdacityConstants.swift in Sources */,
 				1EE7544B1DAC4B0F001100F9 /* LoginViewController.swift in Sources */,
+				1EF740681DB15F84004359DD /* ParseData.swift in Sources */,
 				1EE754651DAD418A001100F9 /* MapViewController.swift in Sources */,
 				1EE754491DAC4B0F001100F9 /* AppDelegate.swift in Sources */,
 				1EE7545D1DACA3E5001100F9 /* ParseClient.swift in Sources */,

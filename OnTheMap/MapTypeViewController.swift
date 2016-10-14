@@ -62,7 +62,7 @@ class MapTypeViewController: UIViewController {
         super.viewDidLoad()
         loadingIndicator.center = view.center
         view.addSubview(loadingIndicator)
-        if Parse.students.isEmpty{
+        if ParseStudents.students.isEmpty{
             reloadData()
         }
     }

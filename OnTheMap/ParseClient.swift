@@ -14,17 +14,6 @@ class ParseClient: NSObject {
 
     typealias CompletionHandler = ((_ result: AnyObject?, _ error: Error?) -> Void)?
 
-    //MARK: Variables
-    var students = [Student]()
-    
-    //MARK: private Variables
-    private var allStudents:[[String: AnyObject]]{
-        get{return []}
-        set{
-            students = [Student]()
-            for studentParameters in newValue {students.append(Student(parameters: studentParameters))}
-        }}
-    
     //MARK: Public methods
     func loadStudents(completionHandler: CompletionHandler) {
         let parameters: [String:Any] = [ParseClient.Constants.LimitParameterKey: ParseClient.Constants.LimitParameterValue,
@@ -35,7 +24,7 @@ class ParseClient: NSObject {
                 self.performOnMain(completionHandler, result: nil, error: NSError(domain: "loadStudents", code: 2, userInfo: [NSLocalizedDescriptionKey: "No results was returned by the request!"]))
                 return
             }
-            self.allStudents = studentArray
+            ParseStudents.updateStudents(studentArray)
             self.performOnMain(completionHandler, result: result, error: error)
         })
     }
